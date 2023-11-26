@@ -34,6 +34,10 @@
     background-color: rgb(79,111,82);
     border-bottom: 2px solid rgb(236,227,206);
     box-shadow: 0 2px 20px rgb(236,227,206);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 .header ul{
@@ -670,4 +674,8 @@
     .footer-2 h2{
         font-size: 20px;
     }
+}
+
+html{
+    scroll-behavior:smooth
 }
