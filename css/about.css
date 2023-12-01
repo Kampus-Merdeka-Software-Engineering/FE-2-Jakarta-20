@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.headerbar{
+    display: none;
+}
+
+.searchicon{
+    display: block;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.bar{
+    display: none;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 7vw;
+    background-color: rgb(79,111,82);
+    border-bottom: 2px solid rgb(236,227,206);
+    box-shadow: 0 2px 20px rgb(236,227,206);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+}
+
+.header ul li:hover{
+    color: rgb(199,220,167);
+}
+
+.nav ul li{
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.account{
+    flex: 0.1;
+}
+
+.account ul{
+    display: flex;
+    justify-content: end;
+}
+
+.account ul li{
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+.bar i:hover{
+    color: rgb(199,220,167);
+}
+
+.search{
+    display: none;
+    width: 200px;
+    justify-content: center;
+}
+
+.search input{
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+.srchicon{
+    background-color: rgb(58,77,57);
+    display: block;
+    padding: 4px 5px;
+    cursor: pointer;
+}
+
+.home{
+    background-color: rgb(79,111,82);
+    padding: 0 7vw;
+}
+
+.main_slide4{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 100px 0;
+}
+
+.main_slide4 .chef-feed{
+    flex: 0.5;
+    margin-top: 30px;
+}
+
+.main_slide4 .chef{
+    flex: 0.5;
+    text-align: right;
+}
+
+.main_slide4 .chef img{
+    margin-top: -70px;
+    width: 50vw;
+    max-width: 450px;
+}
+
+.main_slide4 .chef-feed h2{
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.main_slide4 .chef-feed p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.main_slide4 .chef-detail{
+    margin-top: 20px;
+    display: flex;
+    margin: 25px 0;
+    align-items: center;
+}
+
+.main_slide4 .chef-detail img{
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 4px solid white;
+}
+
+.main_slide4 .chef-detail h6{
+    font-size: 30px;
+}
+
+.main_slide4 .chef-detail p{
+    font-size: 20px;
+    color: rgb(210,222,50);
+}
+
+.footer{
+    padding: 60px 0;
+    border-top: 2px solid rgb(236,227,206);
+    background-color: rgb(79,111,82);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-1{
+    text-align: left;
+    cursor: pointer;
+}
+
+.footer-1 .logo img{
+    width: 200px;
+}
+
+.footer-1 h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+.footer-1 p{
+    cursor: pointer;
+    font-size: 14px;
+    padding: 2px;
+    color: rgb(210,222,50);
+}
+
+.footer-2{
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer-2 h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer-2 img{
+    width: 100px;
+    margin-bottom: 15px;
+}

@@ -99,6 +99,7 @@
 }
 
 .main_slide{
+    margin: 40px 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap-reverse;
@@ -341,7 +342,7 @@
 }
 
 .main_slide4{
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap-reverse;
     padding: 100px 0;
