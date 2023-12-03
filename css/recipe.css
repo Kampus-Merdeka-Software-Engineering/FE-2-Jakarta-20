@@ -12,10 +12,6 @@
     display: none;
 }
 
-.searchicon{
-    display: block;
-}
-
 .logo img{
     width: 150px;
 }
@@ -71,26 +67,6 @@
 
 .bar i:hover{
     color: rgb(199,220,167);
-}
-
-.search{
-    display: none;
-    width: 200px;
-    justify-content: center;
-}
-
-.search input{
-    width: 100%;
-    outline: none;
-    border: none;
-    padding: 5px;
-}
-
-.srchicon{
-    background-color: rgb(58,77,57);
-    display: block;
-    padding: 4px 5px;
-    cursor: pointer;
 }
 
 .home{
@@ -237,4 +213,121 @@
 .footer-2 img{
     width: 100px;
     margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 768px){
+    .header .nav,.header .account{
+        display: none;
+    }
+    .bar{
+        display: block;
+        cursor: pointer;
+    }
+    .headerbar{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        bottom: 0;
+        right: -100%;
+        transition: all 0.5s;
+        background-color: rgb(58,77,57);
+    }
+
+    .headerbar .account, .headerbar .nav{
+        display: block;
+        font-size: 18px;
+    }
+
+    .bar .fa-xmark{
+        display: none;
+        top: 20px;
+        right: 5w;
+        position: absolute;
+        font-size: 25px;
+    }
+    .headerbar .nav ul{
+        flex-direction: column;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .headerbar .nav li{
+        width: 96vw;
+        margin: 10px 0;
+        padding: 15px 30px;
+        box-shadow: 0 2px 15px white;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .headerbar .account{
+        line-height: 40px;
+        margin-top: 60px;
+        background-color: rgb(115,144,114);
+        padding: 15px;
+    }
+    .headerbar .account ul{
+        justify-content: space-between;
+    }
+
+    .main_slide3{
+        margin-top: 50px;
+    }
+
+    .main_slide3 .fav-head{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .footer .footer-1 div{
+        margin: 0;
+    }
+
+    .footer div{
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+
+    .red_btn{
+        margin-top: 10px;
+        width: 120px;
+        line-height: 30px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .main_slide3 .fav-head{
+        width: 100%;
+    }
+
+    .main_slide3 .fav-head h3{
+        font-size: 25px;
+    }
+
+    .main_slide3 .fav-head p{
+        font-size: 11px;
+    }
+
+    .footer div:last-child{
+        margin-bottom: 0;
+    }
+
+    .footer{
+        padding-bottom: 25px;
+    }
+
+    .footer-1 h4{
+        font-size: 20px;
+    }
+
+    .footer-2 h2{
+        font-size: 20px;
+    }
+}
+
+html{
+    scroll-behavior:smooth
 }

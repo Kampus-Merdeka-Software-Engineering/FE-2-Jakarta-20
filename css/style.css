@@ -12,10 +12,6 @@
     display: none;
 }
 
-.searchicon{
-    display: block;
-}
-
 .logo img{
     width: 150px;
 }
@@ -71,26 +67,6 @@
 
 .bar i:hover{
     color: rgb(199,220,167);
-}
-
-.search{
-    display: none;
-    width: 200px;
-    justify-content: center;
-}
-
-.search input{
-    width: 100%;
-    outline: none;
-    border: none;
-    padding: 5px;
-}
-
-.srchicon{
-    background-color: rgb(58,77,57);
-    display: block;
-    padding: 4px 5px;
-    cursor: pointer;
 }
 
 .home{
@@ -249,7 +225,7 @@
     justify-content: flex-start;
     align-items: center;
     padding: 15px 0;
-    cursor: pointer;
+    cursor: default;
 }
 
 .q-ans img{
@@ -481,9 +457,6 @@
 @media only screen and (max-width: 768px){
     .header .nav,.header .account{
         display: none;
-    }
-    .search{
-        width: 60vw;
     }
     .bar{
         display: block;
