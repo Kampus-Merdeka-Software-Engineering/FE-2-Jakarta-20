@@ -29,7 +29,7 @@
     padding: 0 7vw;
     background-color: rgb(79,111,82);
     border-bottom: 2px solid rgb(236,227,206);
-    box-shadow: 0 2px 20px rgb(236,227,206);
+    box-shadow: 0 2px 20px white;
     position: fixed;
     top: 0;
     width: 100%;
@@ -292,6 +292,14 @@
 @media only screen and (max-width: 550px){
 
     .red_btn{
+        margin-top: 10px;
+        width: 120px;
+        line-height: 30px;
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .white_btn{
         margin-top: 10px;
         width: 120px;
         line-height: 30px;
