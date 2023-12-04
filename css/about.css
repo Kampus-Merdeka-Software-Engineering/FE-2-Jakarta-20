@@ -286,6 +286,40 @@
     margin-bottom: 15px;
 }
 
+.contact{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 60px;
+    padding: 0 4vw;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.contact_btn{
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-weight: bold;
+    color: rgb(58,77,57);
+    line-height: 30px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(58,77,57);
+    box-shadow: 0 10px 15px black;
+    transition: all 0.2s;
+}
+
+.contact_btn:hover{
+    background-color: rgb(58,77,57);
+    box-shadow: 0 2px 15px white;
+    border: 1px solid rgb(58,77,57);
+    color: white;
+}
+
 @media only screen and (max-width: 768px){
     .header .nav,.header .account{
         display: none;
@@ -434,6 +468,14 @@
 
     .footer-2 h2{
         font-size: 20px;
+    }
+
+    .contact_btn{
+        margin-top: 10px;
+        width: 100px;
+        line-height: 25px;
+        font-size: 12px;
+        padding: 0 5px;
     }
 }
 
