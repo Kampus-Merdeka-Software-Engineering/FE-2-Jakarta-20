@@ -14,6 +14,16 @@ cross.addEventListener('click', function(){
     headerbar.style.right = '-100%';
 })
 
+// const baseApiUrl =
+//   window.location.hostname === "localhost"
+//     ? "http://localhost:3000"
+//     : "https://be-final-ecommerce-production.up.railway.app";
+// belum bikin dan connect ke railway
+
+const apiRoutes = {
+  contacts: `${baseApiUrl}/contacts`,
+};
+
 const form = document.getElementById('contactForm');
 
 form.addEventListener('submit', function (event) {
@@ -21,7 +31,7 @@ form.addEventListener('submit', function (event) {
     
     const formData = new FormData(this);
 
-    fetch("/contacts", {
+    fetch(apiRoutes.contacts, {
       method: "POST",
       body: formData,
     })
