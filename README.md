@@ -31,13 +31,13 @@ Follow these steps to set up the Food Recipe Website locally:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/food-recipe-website.git
+    git clone https://github.com/your-username/Kampus-Merdeka-Software-Engineering/FE-2-Jakarta-20.git
     ```
 
 2. Navigate to the project directory:
 
     ```bash
-    cd food-recipe-website
+    cd FE-2-Jakarta-20
     ```
 
 3. Open the `index.html` file in your preferred web browser.
