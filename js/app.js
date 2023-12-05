@@ -13,3 +13,21 @@ cross.addEventListener('click', function(){
     cross.style.display = 'none';
     headerbar.style.right = '-100%';
 })
+
+const form = document.getElementById('contactForm');
+
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    
+    const formData = new FormData(this);
+
+    fetch("/contact", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.text())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch(console.error("Error:", error));
+})
