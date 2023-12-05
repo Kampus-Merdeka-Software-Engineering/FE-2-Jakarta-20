@@ -21,7 +21,7 @@ form.addEventListener('submit', function (event) {
     
     const formData = new FormData(this);
 
-    fetch("/contact", {
+    fetch("/contacts", {
       method: "POST",
       body: formData,
     })
