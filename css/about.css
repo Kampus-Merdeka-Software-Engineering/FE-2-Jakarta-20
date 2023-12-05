@@ -286,7 +286,7 @@
     margin-bottom: 15px;
 }
 
-.contact{
+.contacts{
     display: flex;
     margin-bottom: 30px;
     justify-content: flex-end;
@@ -299,7 +299,7 @@
     z-index: 2;
 }
 
-.contact_btn{
+.contacts_btn{
     cursor: pointer;
     margin-top: 20px;
     width: 100px;
@@ -313,7 +313,7 @@
     transition: all 0.2s;
 }
 
-.contact_btn:hover{
+.contacts_btn:hover{
     background-color: rgb(58,77,57);
     box-shadow: 0 2px 15px white;
     border: 1px solid rgb(58,77,57);
@@ -470,7 +470,7 @@
         font-size: 20px;
     }
 
-    .contact_btn{
+    .contacts_btn{
         margin-top: 10px;
         width: 100px;
         line-height: 25px;
