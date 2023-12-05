@@ -18,11 +18,12 @@ cross.addEventListener('click', function(){
 //   window.location.hostname === "localhost"
 //     ? "http://localhost:3000"
 //     : "https://be-final-ecommerce-production.up.railway.app";
+
 // belum bikin dan connect ke railway
 
-const apiRoutes = {
-  contacts: `${baseApiUrl}/contacts`,
-};
+// const apiRoutes = {
+//   contacts: `${baseApiUrl}/contacts`,
+// };
 
 const form = document.getElementById('contactForm');
 
