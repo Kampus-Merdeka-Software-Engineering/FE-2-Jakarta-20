@@ -17,9 +17,7 @@ cross.addEventListener('click', function(){
 const baseApiUrl =
   window.location.hostname === "localhost"
     ? "http://localhost:3000"
-    : "PATH_URL_API_RAILWAY";
-
-// belum bikin dan connect ke railway
+    : "https://be-2-jakarta-20-production.up.railway.app/";
 
 const apiRoutes = {
   contacts: `${baseApiUrl}/contacts`,
