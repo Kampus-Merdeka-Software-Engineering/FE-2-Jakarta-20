@@ -1,6 +1,8 @@
 # J20 - Joyful Cooking Tasteful Living
 
-![official-logo](https://github.com/Kampus-Merdeka-Software-Engineering/FE-2-Jakarta-20/assets/113090048/50077aa4-2ec7-4ef3-a844-9918ef60381a)
+<p align="center">
+  <img src="https://Kampus-Merdeka-Software-Engineering.github.io/FE-2-Jakarta-20/images/official-logo.png" width="600px" height="200px">
+</p>
 
 ## Overview
 
