@@ -29,14 +29,21 @@ form.addEventListener('submit', function (event) {
     event.preventDefault();
     
     const formData = new FormData(this);
-
+    
     fetch(apiRoutes.contacts, {
-      method: "POST",
-      body: formData,
+        method: "POST",
+        body: formData,
     })
-      .then((response) => response.text())
-      .then((data) => {
-        console.log(data);
-      })
-      .catch(console.error("Error:", error));
+        .then((response) => {
+            if (response.ok) {
+                alert("Data submitted successfully!");
+                form.reset();
+            } else {
+                alert("Failed to submit data. Please try again.");
+            }
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+            alert("Failed to submit data. Please try again.");
+        });
 })
