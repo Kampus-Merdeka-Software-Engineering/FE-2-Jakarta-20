@@ -23,27 +23,30 @@ const apiRoutes = {
   contacts: `${baseApiUrl}/contacts`,
 };
 
-const form = document.getElementById('contactForm');
+function submitForm(event) {
+  event.preventDefault();
+  const formData = new FormData(this);
 
-form.addEventListener('submit', function (event) {
-    event.preventDefault();
-    
-    const formData = new FormData(this);
-    
-    fetch(apiRoutes.contacts, {
-        method: "POST",
-        body: formData,
+  fetch(apiRoutes.contacts, {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => {
+      if (response.ok) {
+        // Data submitted successfully
+        alert("Data submitted successfully");
+        resetForm();
+      } else {
+        // Handle errors if any
+        alert("Error submitting data");
+      }
     })
-        .then((response) => {
-            if (response.ok) {
-                alert("Data submitted successfully!");
-                form.reset();
-            } else {
-                alert("Failed to submit data. Please try again.");
-            }
-        })
-        .catch((error) => {
-            console.error("Error:", error);
-            alert("Failed to submit data. Please try again.");
-        });
-})
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("Error submitting data");
+    });
+}
+
+function resetForm() {
+  document.getElementById("contactsForm").reset();
+}
