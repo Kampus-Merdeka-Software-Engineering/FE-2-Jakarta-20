@@ -86,7 +86,7 @@ body{
     position: relative;
 }
 
-.main input[type="submit"]:hover{
+.main button[type="submit"]:hover{
     background: rgb(236,227,206);
     color: rgb(58,77,57);
     font-weight: bold;
