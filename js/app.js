@@ -29,8 +29,12 @@ const apiRoutes = {
   contacts: `${baseApiUrl}/contacts`,
 };
 
-function submitForm(e) {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
+  submitForm(e);
+});
+
+function submitForm(event) {
   // collect element input
   const name = document.querySelector("#name").value;
   const email = document.querySelector("#email").value;
