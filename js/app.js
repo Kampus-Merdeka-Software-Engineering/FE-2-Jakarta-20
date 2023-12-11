@@ -27,6 +27,7 @@ const baseApiUrl =
 
 const apiRoutes = {
   contacts: `${baseApiUrl}/contacts`,
+  about: `${baseApiUrl}/about`,
 };
 
 form.addEventListener("submit", function (e) {
