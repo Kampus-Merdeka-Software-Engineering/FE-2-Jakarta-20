@@ -29,39 +29,8 @@ const apiRoutes = {
   contacts: `${baseApiUrl}/contacts`,
 };
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-    const name = document.querySelector("#name").value;
-    const email = document.querySelector("#email").value;
-    const subject = document.querySelector("#subject").value;
-    const message = document.querySelector("#message").value;
-
-    const formData = { name, email, subject, message };
-
-    fetch(apiRoutes.contacts, {
-      headers: {
-        "Content-Type": "Application/json",
-      },
-      method: "POST",
-      body: JSON.stringify(formData),
-    })
-      .then((response) => {
-        if (response.ok) {
-          // Data submitted successfully
-          alert("Data submitted successfully");
-          resetForm();
-        } else {
-          // Handle errors if any
-          alert("Error submitting data");
-        }
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-        alert("Error submitting data");
-      });
-});
-
 function submitForm(e) {
+  e.preventDefault();
   // collect element input
   const name = document.querySelector("#name").value;
   const email = document.querySelector("#email").value;
