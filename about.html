@@ -137,7 +137,7 @@
     <script>
         let wrapAbout = document.querySelector('#wrap-about')
 
-        fetch('https://be-2-jakarta-20-production.up.railway.app/about', {
+        fetch(apiRoutes.about, {
             method : 'GET'
         })
         .then((res) => res.json())
