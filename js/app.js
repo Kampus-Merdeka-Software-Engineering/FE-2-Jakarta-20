@@ -30,10 +30,13 @@ const apiRoutes = {
   about: `${baseApiUrl}/about`,
 };
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  submitForm(e);
-});
+if (form) {
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    submitForm(e);
+  });
+
+}
 
 function submitForm(event) {
   // collect element input

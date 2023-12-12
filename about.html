@@ -101,73 +101,7 @@
                     Batch 5 <br> 
                     ~ Study Independent ~</p>
             </div>
-            <div class="fav-food">
-                <div class="item">
-                    <div>
-                        <img src="./images/maila.png" alt="">
-                    </div>
-                    <h3>Maila Faiza Shafira</h3>
-                    <br>
-                    <p>Sistem Informasi, Universitas Bina Sarana Informatika</p>
-                    <a href="https://www.linkedin.com/in/maila-faiza-shafira-44a0b3260/">
-                    <button class="red_btn" >View</button>
-                    </a>
-                </div>
-                <div class="item">
-                    <div>
-                        <img src="./images/anin.png" alt="">
-                    </div>
-                    <h3>Anindya Maheswari</h3>
-                    <br>
-                    <p>Matematika, <br> Universitas Pendidikan Indonesia</p> 
-                    <a href="https://www.linkedin.com/in/anindya-maheswari-065875219">
-                    <button class="white_btn" >View</button>
-                    </a>
-                </div>
-                <div class="item">
-                    <div>
-                        <img src="./images/pandu.png" alt="">
-                    </div>
-                    <h3>Pandu Bahrul</h3>
-                    <br>
-                    <p>Ilmu Peternakan, Universitas Padjadjaran</p> <br>
-                    <a href="https://www.linkedin.com/in/pandubahrul/">
-                    <button class="red_btn" >View</button>
-                    </a>
-                </div>
-                <div class="item">
-                    <div>
-                        <img src="./images/diyah.png" alt="">
-                    </div>
-                    <h3>Diyah Puspita Rini</h3>
-                    <br>
-                    <p>Akuntansi, <br> Universitas Nusantara PGRI Kediri</p>
-                    <a href="https://www.linkedin.com/in/diyah-puspita-rini-69a844244/">
-                    <button class="white_btn" >View</button>
-                    </a>
-                </div>
-                <div class="item">
-                    <div>
-                        <img src="./images/nayla.png" alt="">
-                    </div>
-                    <h3>Nayla Syarifah</h3>
-                    <br>
-                    <p>Administrasi Publik, Universitas Serang Raya</p><br>
-                    <a href="https://www.linkedin.com/in/nayla-syarifah-b0b300220/">
-                    <button class="red_btn" >View</button>
-                    </a>
-                </div>
-                <div class="item">
-                    <div>
-                        <img src="./images/rafli.png" alt="">
-                    </div>
-                    <h3>Rafli Adestia</h3>
-                    <br>
-                    <p>Geofisika, <br> Universitas Indonesia</p><br>
-                    <a href="https://www.linkedin.com/in/rafliadestia/">
-                    <button class="white_btn" >View</button>
-                    </a>
-                </div>
+            <div class="fav-food" id="wrap-about">
             </div>
         </div>
     </div>
@@ -200,6 +134,35 @@
 
     <script src=./js/app.js>
     </script>
+    <script>
+        let wrapAbout = document.querySelector('#wrap-about')
 
+        fetch('https://be-2-jakarta-20-production.up.railway.app/about', {
+            method : 'GET'
+        })
+        .then((res) => res.json())
+        .then((res) => {
+            console.log(res);
+            let boxAbout = '';
+
+            if (Array.isArray(res.data)) {
+
+                res.data.forEach((profile) => {
+                    boxAbout += `<div class="item">
+                        <div>
+                            <img src="${profile.image}" alt="">
+                        </div>
+                        <h3>${profile.name}</h3>
+                        <br>
+                        <p>${profile.info}</p>
+                        <a href="${profile.linkedin}">
+                        <button class="white_btn" >View</button>
+                        </a>
+                    </div>`
+                })
+                wrapAbout.innerHTML = boxAbout;
+            }
+        })
+    </script>
 </body>
 </html>
